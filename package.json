@@ -1,0 +1,39 @@
+{
+  "name": "etrak",
+  "version": "0.0.1",
+  "description": "eTrakPro website",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "source variables && npm run dev",
+    "build:ts": "tsc -p .",
+    "server": "node server/index.js",
+    "dev": "nodemon -e ts --dir server/ --exec \"npm run build:ts && npm run server\"",
+    "start": "npm run build:ts && npm run server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ttwitty/etrak.git"
+  },
+  "author": "STEAP",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ttwitty/etrak/issues"
+  },
+  "homepage": "https://github.com/ttwitty/etrak#readme",
+  "dependencies": {
+    "@types/body-parser": "^1.16.8",
+    "@types/cookie-parser": "^1.4.1",
+    "@types/express": "^4.11.1",
+    "@types/express-session": "^1.15.8",
+    "@types/passport": "^0.4.3",
+    "@types/passport-local": "^1.0.32",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "node": "^9.10.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "typescript": "^2.8.1"
+  }
+}
